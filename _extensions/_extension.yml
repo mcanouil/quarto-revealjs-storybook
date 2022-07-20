@@ -1,0 +1,19 @@
+title: Storybook Presentation Template
+author: Mickaël CANOUIL
+version: 1.0.0
+contributes:
+  formats:
+    revealjs:
+      slide-number: false
+      menu: false
+      progress: false
+      html-math-method: plain
+      theme: storybook.scss
+      footer: |
+        <a href="https://mickael.canouil.fr/">mickael.canouil.fr</a>
+        |
+        <a href = "https://creativecommons.org/licenses/by-sa/4.0/">License: CC-BY-SA-4.0</a>
+      logo: mcsb.svg
+      include-in-header: favicon.html
+      title-slide-attributes:
+        data-background-image: cover.jpg

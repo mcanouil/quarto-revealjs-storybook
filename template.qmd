@@ -1,0 +1,26 @@
+---
+title: "A Tale To Tell"
+subtitle: "But Not Yet ..."
+author:  'Mickaël Canouil, _Ph.D._'
+date: today
+date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
+self-contained: true
+format:
+  storybook-revealjs: default
+---
+
+# Chapter 1 {background-image="_extensions/storybook/background.jpg"}
+
+## Lorem Ipsum {background-image="_extensions/storybook/background.jpg"}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
+Ut condimentum velit id purus euismod placerat. 
+
+- Cras semper velit non odio dignissim, sit amet efficitur justo pharetra. 
+- Sed quis dolor neque. Aenean ac accumsan elit. 
+- Nullam tellus ante, lacinia ac ligula at, tempor lobortis tortor. 
+- Nulla rutrum arcu felis, eget semper tellus sollicitudin ut. 
+
+::: aside
+Maecenas feugiat gravida mi, egestas pretium dui faucibus sit amet.
+:::
