@@ -8,10 +8,10 @@ This is a repository for `Quarto` `reveal.js` template.
 
 ## Installation
 
-This [Quarto](quarto.org) extension can be installed/used using the following command:
+This [Quarto](quarto.org) template can be installed/used using the following command:
 
 ```bash
-quarto use extension mcanouil/quarto-revealjs-storybook
+quarto use template mcanouil/quarto-revealjs-storybook
 ```
 
 ## Documentation
