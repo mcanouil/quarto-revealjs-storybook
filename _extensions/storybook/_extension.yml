@@ -17,3 +17,6 @@ contributes:
       include-in-header: favicon.html
       title-slide-attributes:
         data-background-image: cover.jpg
+      format-resources:
+        - cover.jpg
+        - background.jpg
