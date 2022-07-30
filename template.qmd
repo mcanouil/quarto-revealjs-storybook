@@ -8,9 +8,9 @@ self-contained: true
 format: storybook-revealjs
 ---
 
-# Chapter 1 {background-image="background.jpg"}
+# Chapter 1 {background-image="_extensions/mcanouil/storybook/background.jpg"}
 
-## Lorem Ipsum {background-image="background.jpg"}
+## Lorem Ipsum {background-image="_extensions/mcanouil/storybook/background.jpg"}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
 Ut condimentum velit id purus euismod placerat. 
