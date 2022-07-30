@@ -6,6 +6,8 @@
 
 This is a repository for `Quarto` `reveal.js` template.
 
+![Screenshot of title slide with a logo in the top right corner, a background looking like old paper, a block center aligned in the center of the slide with a styled title and subtitle in yellow, the author and date in transparent yellow. The footer of the slide includes.](thumbs/quarto-revealjs-storybook.png)
+
 ## Installation
 
 This [Quarto](quarto.org) template can be installed/used using the following command:
