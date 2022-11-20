@@ -17,10 +17,6 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages: |
-            sysfonts
-            ggplot2
-            ggtext
-            showtext
             knitr
             webshot2
       - name: Set up Quarto
