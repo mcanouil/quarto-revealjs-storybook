@@ -4,13 +4,13 @@ subtitle: "But Not Yet ..."
 author:  'Mickaël Canouil, _Ph.D._'
 date: today
 date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
-self-contained: true
+embed-resources: true
 format: storybook-revealjs
 ---
 
-# Chapter 1 {background-image="_extensions/mcanouil/storybook/background.jpg"}
+# Chapter 1 {background-image="background.jpg"}
 
-## Lorem Ipsum {background-image="_extensions/mcanouil/storybook/background.jpg"}
+## Lorem Ipsum {background-image="background.jpg"}
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit.  
 Ut condimentum velit id purus euismod placerat. 
