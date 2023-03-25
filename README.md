@@ -12,9 +12,14 @@ This is a `Quarto` `revealjs` template repository.
 
 This [Quarto](quarto.org) template can be installed/used using the following command:
 
-```bash
-quarto use template mcanouil/quarto-revealjs-storybook
-```
+- Install
+  ```bash
+  quarto add mcanouil/quarto-revealjs-storybook
+  ```
+- Use
+  ```bash
+  quarto use template mcanouil/quarto-revealjs-storybook
+  ```
 
 ## Documentation
 
