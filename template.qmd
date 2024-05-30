@@ -3,8 +3,7 @@ title: "A Tale To Tell"
 subtitle: "But Not Yet ..."
 author:  'Mickaël Canouil, _Ph.D._'
 date: today
-date-format: "dddd, [the] D[<sup style='font-size:65%;font-style:italic;'>th</sup>] [of] MMMM, YYYY"
-embed-resources: true
+date-format: "dddd, [the] Do [of] MMMM, YYYY"
 format: storybook-revealjs
 ---
 
