@@ -28,27 +28,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: r-lib/actions/setup-r@v2
-
-      - uses: r-lib/actions/setup-r-dependencies@v2
-        with:
-          packages: |
-            sysfonts
-            ggplot2
-            ggtext
-            showtext
-            knitr
-            webshot2
-      
       - uses: quarto-dev/quarto-actions/setup@v2
         with:
           version: pre-release
-          tinytex: true
+          tinytex: false
       
       - name: Render Quarto Project
         shell: bash
         run: |
-          quarto render template.qmd --to storybook-revealjs --output index.html --output-dir _site
+          quarto add mcanouil/quarto-iconify --no-prompt
+          sed 's|_extensions/mcanouil/coeos|_extensions/coeos|g' template.qmd > index.qmd
+          quarto render index.qmd --output-dir _site
       
       - uses: actions/configure-pages@v5
 
@@ -60,9 +50,26 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Update Screenshot
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+
+      - name: Take Screenshot
         shell: bash
         run: |
+          npx -y decktape reveal \
+            --chrome-arg=--no-sandbox \
+            --chrome-arg=--disable-setuid-sandbox \
+            --screenshots \
+            --screenshots-format png \
+            --screenshots-directory . \
+            --size "1280x640" \
+            --slides 1 \
+            _site/index.html _site/index.pdf
+          mv _site/index_1_1280x640.png .github/template.png
+  
+      - name: Update Screenshot
+        shell: bash
+        run: |       
           BRANCH=ci/update-thumbs
           if git show-ref --quiet refs/heads/${BRANCH}; then
             echo "Branch ${BRANCH} already exists."
@@ -70,11 +77,11 @@ jobs:
             git push origin --delete "${BRANCH}"
           fi
           git checkout -b "${BRANCH}"
-          Rscript -e "webshot2::webshot(url = \"_site/index.html\", file = \"template.png\", vwidth = 1920, vheight = 1080)"
           git config --local user.name github-actions[bot]
           git config --local user.email 41898282+github-actions[bot]@users.noreply.github.com
-          git add template.png
+          git add .github/template.png
           git commit -m "ci: update thumbs"
           git push --force origin ${BRANCH}
           gh pr create --fill-first --base "main" --head "${BRANCH}"
+          sleep 15
           gh pr merge --auto --squash --delete-branch
