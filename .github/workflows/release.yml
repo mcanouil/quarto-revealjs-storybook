@@ -30,6 +30,7 @@ jobs:
       quarto: "release"
   screenshot:
     runs-on: ubuntu-latest
+    needs: release
     steps:
       - name: Set up Node.js
         uses: actions/setup-node@v4
