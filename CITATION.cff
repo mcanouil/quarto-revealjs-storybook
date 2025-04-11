@@ -9,5 +9,5 @@ authors:
 repository-code: "https://github.com/mcanouil/quarto-revealjs-storybook"
 url: "http://m.canouil.dev/quarto-revealjs-storybook/"
 license: "MIT"
-date-released: "2025-02-19"
-version: 1.2.1
+date-released: "2025-04-11"
+version: 1.2.2
