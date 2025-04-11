@@ -1,10 +1,12 @@
 ---
 title: "A Tale To Tell"
 subtitle: "But Not Yet ..."
-author:  'Mickaël Canouil, _Ph.D._'
+author: "Mickaël Canouil, _Ph.D._"
 date: today
 date-format: "dddd, [the] Do [of] MMMM, YYYY"
-format: storybook-revealjs
+format:
+  storybook-revealjs:
+    output-file: index
 ---
 
 # Chapter 1 {background-image="background.jpg"}
@@ -19,6 +21,6 @@ Ut condimentum velit id purus euismod placerat.
 - Nullam tellus ante, lacinia ac ligula at, tempor lobortis tortor. 
 - Nulla rutrum arcu felis, eget semper tellus sollicitudin ut. 
 
-::: aside
+::: {.aside}
 Maecenas feugiat gravida mi, egestas pretium dui faucibus sit amet.
 :::
