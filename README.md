@@ -1,7 +1,9 @@
 # Quarto Reveal.js template - Storybook
 
 <!-- badges: start -->
-[![License](https://img.shields.io/github/license/mcanouil/quarto-revealjs-storybook@1.3.0)](LICENSE)
+
+[![License](https://img.shields.io/github/license/mcanouil/quarto-revealjs-storybook)](LICENSE)
+
 <!-- badges: end -->
 
 This is a `Quarto` `revealjs` template repository.
@@ -13,10 +15,13 @@ This is a `Quarto` `revealjs` template repository.
 This [Quarto](quarto.org) template can be installed/used using the following command:
 
 - Install
+
   ```bash
   quarto add mcanouil/quarto-revealjs-storybook@1.3.0
   ```
+
 - Use
+
   ```bash
   quarto use template mcanouil/quarto-revealjs-storybook@1.3.0
   ```
