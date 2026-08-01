@@ -4,3 +4,5 @@ template.html
 _site/
 /cover.jpg
 /background.jpg
+/.quarto/
+**/*.quarto_ipynb

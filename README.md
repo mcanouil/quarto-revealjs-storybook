@@ -12,16 +12,27 @@ This is a `Quarto` `revealjs` template repository.
 
 ## Installation
 
-This [Quarto](quarto.org) template can be installed/used using the following command:
+```bash
+quarto add mcanouil/revealjs-storybook@1.3.0
+quarto add mcanouil/quarto-iconify # Optional
+```
 
-- Install
+## Creating a New Presentation
 
-  ```bash
-  quarto add mcanouil/quarto-revealjs-storybook@1.3.0
-  ```
+```bash
+quarto use template mcanouil/revealjs-storybook@1.3.0
+quarto add mcanouil/quarto-iconify # Optional
+```
 
-- Use
+This will install the extension under the `_extensions` subdirectory.
+If you're using version control, you will want to check in this directory.
 
-  ```bash
-  quarto use template mcanouil/quarto-revealjs-storybook@1.3.0
-  ```
+## Documentation
+
+The full documentation lives at <https://m.canouil.dev/revealjs-storybook/>: the front matter the theme reads, what it styles, the optional iconify dependency, and a deck built by the site itself.
+
+[`template.qmd`](template.qmd) is a complete starting point you can copy.
+
+## Licence
+
+[MIT](https://github.com/mcanouil/revealjs-storybook?tab=MIT-1-ov-file#readme).
