@@ -1,0 +1,87 @@
+---
+title: "Reference"
+subtitle: "What the storybook theme styles."
+description: "The storybook format: the front matter it reads, what it styles, and the optional iconify dependency."
+---
+
+## Using the format
+
+```yaml
+format: storybook-revealjs
+```
+
+## Options
+
+This theme has no options of its own.
+Everything is styled from the front matter Quarto already defines, and from RevealJS's own options.
+
+## Front matter it reads
+
+| Key | Used for |
+| --- | --- |
+| `title`, `subtitle` | The title slide, in the theme's script face. |
+| `author`, `institute` | The title slide. |
+| `date` | The title slide. |
+| `logo` | The top right corner of every slide. |
+| `footer` | The centre of the footer. |
+
+: Front matter the theme lays out. {.striped .hover tbl-colwidths="[30,70]"}
+
+Every RevealJS option works as usual: `incremental`, `transition`, and the rest.
+
+## The defaults it sets
+
+The format arrives with these already set, and each is an ordinary RevealJS or Quarto key you can override in your own front matter.
+
+| Key | Value |
+| --- | --- |
+| `theme` | `storybook.scss` |
+| `slide-number` | `false` |
+| `menu` | `false` |
+| `progress` | `false` |
+| `html-math-method` | `plain` |
+| `logo` | `mcsb.svg` |
+| `footer` | A link to the theme author's site and to the CC BY-SA 4.0 licence. |
+
+: What the format sets before your front matter is read. {.striped .hover tbl-colwidths="[32,68]"}
+
+::: {.callout-note}
+The default footer names the theme author and the theme's own licence, not yours.
+Set `footer` in your front matter to replace it.
+:::
+
+The format also adds a favicon to the head, and it turns the slide number, the progress bar, and the slide menu off.
+Setting `slide-number: true` brings the numbers back, styled by the theme.
+
+## The two background images
+
+The format ships two images and makes them available to your deck.
+
+| Image | Used for |
+| --- | --- |
+| `cover.jpg` | The title slide background, applied for you. |
+| `background.jpg` | Available for any other slide, and applied by you. |
+
+: The images the format ships. {.striped .hover tbl-colwidths="[26,74]"}
+
+Put `background.jpg` behind a slide with the RevealJS attribute:
+
+```markdown
+# Chapter 1 {background-image="background.jpg"}
+```
+
+Naming your own file there uses that instead.
+
+## The optional icon dependency
+
+```bash
+quarto add mcanouil/quarto-iconify
+```
+
+[iconify](https://m.canouil.dev/quarto-iconify) is optional.
+Installing it lets the footer and slides carry icons from any Iconify set; without it, everything else works unchanged.
+
+## Limitations
+
+- RevealJS only.
+- There is nothing to mark up: the theme adds no shortcodes, filters, or classes of its own, and the only thing a slide opts into is a background image.

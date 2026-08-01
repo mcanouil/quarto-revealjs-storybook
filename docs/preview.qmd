@@ -1,0 +1,47 @@
+---
+title: "The storybook theme"
+subtitle: "A deck built by the documentation site"
+author: "Mickaël CANOUIL"
+institute: "An institute"
+date: last-modified
+format: storybook-revealjs
+---
+
+## A slide
+
+The theme styles the title slide, the headings, and the footer, and puts a double rule around every slide.
+
+Everything on this deck is the theme; nothing here is marked up for it.
+
+# Chapter 1 {background-image="background.jpg"}
+
+## A slide over the shipped background {background-image="background.jpg"}
+
+The format ships `background.jpg`, so a slide can name it without adding a file of its own.
+
+## Lists and code
+
+- A list item.
+- Another one.
+
+```r
+summary(cars)
+```
+
+## A table
+
+| Chapter | Pages |
+| --- | --- |
+| The Setup | 1 to 24 |
+| The Turn | 25 to 61 |
+
+: A table styled by the theme. {tbl-colwidths="[60,40]"}
+
+## Incremental content
+
+::: {.incremental}
+
+- Revealed in turn.
+- As usual.
+
+:::
