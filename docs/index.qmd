@@ -8,7 +8,9 @@ authors:
     url: "https://mickael.canouil.fr"
 ---
 
-`storybook` styles a Quarto presentation as a storybook: a laid-out title slide, a logo, and a footer, with the warmth that suits a talk meant to be told rather than presented.
+Not every talk is a report, and a default deck makes a told story look like one.
+
+`storybook` styles a Quarto presentation as a storybook instead: a script face on an illustrated cover, a double rule around every slide, and no slide numbers, progress bar, or menu to count down the pages.
 
 [See a deck built by this site](preview.html).
 

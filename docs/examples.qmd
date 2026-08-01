@@ -32,7 +32,18 @@ format:
     slide-number: true
 ```
 
-Both are RevealJS options; the theme styles where they land.
+All three are RevealJS options; the theme styles where they land.
+The format turns the slide number off, so `slide-number: true` is what brings it back.
+
+## A background image
+
+```markdown
+# Chapter 1 {background-image="background.jpg"}
+```
+
+`background.jpg` ships with the format, so a slide can name it without your adding a file.
+Name your own file there to use that instead.
+The title slide already carries the shipped `cover.jpg` without your asking for it.
 
 ## Ordinary slides
 
