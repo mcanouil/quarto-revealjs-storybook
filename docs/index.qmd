@@ -12,6 +12,8 @@ authors:
 
 [See a deck built by this site](preview.html).
 
+![](preview.html){.embed-art loading="lazy" title="A deck in the storybook theme" style="--atelier-embed-art-ratio: 1.78;"}
+
 ## Starting a presentation
 
 ```bash
