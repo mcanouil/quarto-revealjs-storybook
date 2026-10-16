@@ -13,14 +13,14 @@ This is a `Quarto` `revealjs` template repository.
 ## Installation
 
 ```bash
-quarto add mcanouil/revealjs-storybook@1.3.0
+quarto add mcanouil/quarto-revealjs-storybook@1.3.4
 quarto add mcanouil/quarto-iconify # Optional
 ```
 
 ## Creating a New Presentation
 
 ```bash
-quarto use template mcanouil/revealjs-storybook@1.3.0
+quarto use template mcanouil/quarto-revealjs-storybook@1.3.4
 quarto add mcanouil/quarto-iconify # Optional
 ```
 
@@ -35,4 +35,4 @@ The full documentation lives at <https://m.canouil.dev/revealjs-storybook/>: the
 
 ## Licence
 
-[MIT](https://github.com/mcanouil/revealjs-storybook?tab=MIT-1-ov-file#readme).
+[MIT](https://github.com/mcanouil/quarto-revealjs-storybook?tab=MIT-1-ov-file#readme).
